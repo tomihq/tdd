@@ -3,8 +3,4 @@ def factorial(n):
         return "number must be positive"
     elif(n == 0 or n == 1):
         return 1
-    elif(n == 2):
-        return 2
-    elif(n == 3):
-        return 3*2
-    return 4*3*2
+    return n * factorial(n-1)

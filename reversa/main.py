@@ -1,6 +1,6 @@
 def reversa(s):
-    if len(s) == 0:
-        return ""
-    elif len(s) == 1:
+    if len(s) == 0 or len(s) == 1:
         return s
-    return s[-1] + s[0]
+    elif len(s) == 2:
+        return s[1] + s[0]
+    return s[2] + s[1] + s[0] 
