@@ -11,3 +11,6 @@ def test_factorial_1_es_1():
 
 def test_factorial_2_es_2():
     assert(factorial(2) == 2)
+
+def test_factorial_3_es_6():
+    assert(factorial(3) == 6)
