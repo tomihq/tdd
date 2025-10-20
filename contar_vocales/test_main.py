@@ -5,5 +5,8 @@ def test_string_vacio_no_tiene_vocales():
 def test_string_tiene_una_vocal():
     assert(contar_vocales("a") == 1)
 
-def test_string_tiene_una_consonante():
+def test_string_no_vacio_no_tiene_vocales():
     assert(contar_vocales("b") == 0)
+
+def test_string_tiene_dos_vocales():
+    assert(contar_vocales("abe") == 2)
