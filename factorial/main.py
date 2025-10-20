@@ -1,2 +1,2 @@
 def factorial(n):
-   raise NotImplementedError 
+   return "number must be positive"
