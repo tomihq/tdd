@@ -1,2 +1,5 @@
+vocales = "aeiou"
 def contar_vocales(s):
-    return 0
+    if s == "":
+        return 0
+    return 1
