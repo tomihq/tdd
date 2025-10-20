@@ -1,0 +1,2 @@
+def palindromo(c):
+    return ""
