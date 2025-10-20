@@ -7,7 +7,7 @@ def factores_primos(n):
     while(contador <= n):
         if(n % contador == 0):
             factores_primos_n.append(contador)
-            n = n/2
+            n = n/contador
         else:
             contador+=1
     return factores_primos_n
