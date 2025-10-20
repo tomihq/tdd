@@ -12,5 +12,5 @@ def test_devuelve_reversa_entrada_si_string_es_longitud_dos():
 def test_devuelve_reversa_entrada_si_string_es_longitud_tres():
     assert(reversa("abc") == "cba")
 
-#def test_devuelve_reversa_entrada_si_string_es_longitud_n():
-     #   assert(reversa("+ab!cde_f98gh143") == "341hg89f_edc!ba+")
+def test_devuelve_reversa_entrada_si_string_es_longitud_n():
+    assert(reversa("+ab!cde_f98gh143") == "341hg89f_edc!ba+")
