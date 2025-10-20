@@ -3,4 +3,6 @@ def fizzbuzz(n):
         return "fizzbuzz"
     elif(n%3 == 0):
         return "fizz"
-    return "buzz"
+    elif(n%5 == 0):
+        return "buzz"
+    return str(n)
