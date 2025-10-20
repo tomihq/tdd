@@ -1,2 +1,4 @@
 def factorial(n):
-   return "number must be positive"
+    if(n<0):
+        return "number must be positive"
+    return 1 
