@@ -1,2 +1,4 @@
 def palindromo(c):
-    return ""
+    if len(c) == 0:
+        return ""
+    return c
