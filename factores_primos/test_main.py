@@ -15,3 +15,6 @@ def test_numero_4_su_factor_primo_es_2_y_un_primo():
 
 def test_numero_6_es_producto_de_dos_primos():
     assert(factores_primos(6) == [2, 3])
+
+def test_numero_18_es_producto_de_dos_primos_diferentes_y_uno_repetido():
+    assert(factores_primos(18) == [2, 3, 3])
