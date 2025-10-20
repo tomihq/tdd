@@ -7,3 +7,5 @@ def test_fizzbuzz_imprime_fizz_si_es_divisible_por_3():
 def test_fizzbuzz_imprime_buzz_si_es_divisible_por_5():
     assert(fizzbuzz(5) == "buzz")
 
+def test_fizzbuzz_imprime_fizz_buzz_si_es_divisible_por_3_y_5():
+    assert(fizzbuzz(15) == "fizzbuzz")
