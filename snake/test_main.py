@@ -39,13 +39,13 @@ def test_08_game_screen_should_be_correct_based_on_cell_size_and_measures():
     assert(snake_game.screen_height() == height * cell_size)
 
 
-def test_0_game_starts_with_snake_looking_to_right():
+def test_09_game_starts_with_snake_looking_to_right():
     snake_game = Game()
     assert(snake_game.snake_orientation() == (1, 0))
 
-def test_0_game_starts_with_snake_at_middle_of_screen():
+def test_10_game_starts_with_snake_at_middle_of_screen():
     snake_game = Game()
+    # width = height always.
     width = snake_game.screen_width()
-    height = snake_game.screen_height()
-    screen_mid = width / height
+    screen_mid = width / 2
     assert(snake_game.snake_position() == screen_mid)
