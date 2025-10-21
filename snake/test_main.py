@@ -12,25 +12,29 @@ def test_03_game_over_flag_on_initialization_is_set_to_false():
     snake_game = Game()
     assert(snake_game.game_over() == False)
 
-def test_04_game_map_should_be_square():
+def test_04_game_width_should_be_square():
     snake_game = Game()
-    assert(snake_game.screen_width() == snake_game.screen_height())
+    assert(snake_game.width() == snake_game.height())
 
-def test_05_game_map_dimensions_should_be_positive():
+def test_05_game_width_should_be_positive():
     snake_game = Game()
-    assert(snake_game.screen_width() > 0)
-    assert(snake_game.screen_height() > 0)
+    assert(snake_game.width() > 0)
+    assert(snake_game.height() > 0)
 
-def test_06_game_cells_dimensions_should_be_20x20_by_default():
+def test_06_game_screen_dimensions_should_be_20x20_by_default():
+    snake_game = Game()
+    assert(snake_game.width() == 20)
+    assert(snake_game.height() == 20)
+
+def test_07_game_cells_dimensions_should_be_20x20_by_default():
     snake_game = Game()
     assert(snake_game.cell_size() == 20)
 
-
-def test_07_game_starts_with_snake_looking_to_right():
+def test_08_game_starts_with_snake_looking_to_right():
     snake_game = Game()
     assert(snake_game.snake_orientation() == (1, 0))
 
-def test_08_game_starts_with_snake_at_middle_of_screen():
+def test_09_game_starts_with_snake_at_middle_of_screen():
     snake_game = Game()
     width = snake_game.screen_width()
     height = snake_game.screen_height()

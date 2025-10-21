@@ -8,11 +8,17 @@ class Game:
     def game_over(self):
         return False
 
+    def width(self):
+        return 20
+
+    def height(self):
+        return 20
+
     def screen_width(self):
-        return 1
+        return 20
     
     def screen_height(self):
-        return 1
+        return 20
 
     def snake_orientation(self):
         return (1, 0)
