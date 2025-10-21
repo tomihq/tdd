@@ -21,11 +21,16 @@ def test_05_game_map_dimensions_should_be_positive():
     assert(snake_game.screen_width() > 0)
     assert(snake_game.screen_height() > 0)
 
-def test_06_game_starts_with_snake_looking_to_right():
+def test_06_game_cells_dimensions_should_be_20x20_by_default():
+    snake_game = Game()
+    assert(snake_game.cell_size() == 20)
+
+
+def test_07_game_starts_with_snake_looking_to_right():
     snake_game = Game()
     assert(snake_game.snake_orientation() == (1, 0))
 
-def test_07_game_starts_with_snake_at_middle_of_screen():
+def test_08_game_starts_with_snake_at_middle_of_screen():
     snake_game = Game()
     width = snake_game.screen_width()
     height = snake_game.screen_height()

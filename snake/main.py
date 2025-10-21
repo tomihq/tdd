@@ -16,3 +16,6 @@ class Game:
 
     def snake_orientation(self):
         return (1, 0)
+    
+    def cell_size(self):
+        return 20
