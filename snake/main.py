@@ -24,7 +24,7 @@ class Game:
         return (1, 0)
     
     def snake_position(self):
-        return 200
+        return (10, 10)
 
     def cell_size(self):
         return 20
