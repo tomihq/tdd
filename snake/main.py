@@ -7,3 +7,9 @@ class Game:
 
     def game_over(self):
         return False
+
+    def screen_width(self):
+        return 0
+    
+    def screen_height(self):
+        return 0

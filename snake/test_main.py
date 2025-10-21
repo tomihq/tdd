@@ -11,3 +11,7 @@ def test_02_state_on_new_game_initialization_is_set_to_running():
 def test_03_game_over_flag_on_initialization_is_set_to_false():
     snake_game = Game()
     assert(snake_game.game_over() == False)
+
+def test_04_game_map_should_be_square():
+    snake_game = Game()
+    assert(snake_game.screen_width() == snake_game.screen_height())
