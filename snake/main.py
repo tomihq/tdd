@@ -13,3 +13,6 @@ class Game:
     
     def screen_height(self):
         return 0
+
+    def snake_orientation(self):
+        return (1, 0)
