@@ -4,3 +4,6 @@ class Game:
 
     def current_state(self):
         return "running"
+
+    def game_over(self):
+        return False
