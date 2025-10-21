@@ -9,10 +9,10 @@ class Game:
         return False
 
     def screen_width(self):
-        return 0
+        return 1
     
     def screen_height(self):
-        return 0
+        return 1
 
     def snake_orientation(self):
         return (1, 0)

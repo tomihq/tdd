@@ -16,6 +16,18 @@ def test_04_game_map_should_be_square():
     snake_game = Game()
     assert(snake_game.screen_width() == snake_game.screen_height())
 
-def test_05_game_starts_with_snake_looking_to_right():
+def test_05_game_map_dimensions_should_be_positive():
+    snake_game = Game()
+    assert(snake_game.screen_width() > 0)
+    assert(snake_game.screen_height() > 0)
+
+def test_06_game_starts_with_snake_looking_to_right():
     snake_game = Game()
     assert(snake_game.snake_orientation() == (1, 0))
+
+def test_07_game_starts_with_snake_at_middle_of_screen():
+    snake_game = Game()
+    width = snake_game.screen_width()
+    height = snake_game.screen_height()
+    screen_mid = width / height
+    assert(snake_game.snake_position() == screen_mid)
