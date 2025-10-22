@@ -53,5 +53,10 @@ class Game:
         while True:
             if (food_x, food_y) != self._snake_position:
                 return (food_x, food_y)
-                
+    
+    def eat(self, snake_position, food_position):
+        if snake_position != food_position:
+            return
+        
+        
         

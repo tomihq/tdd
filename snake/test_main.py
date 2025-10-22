@@ -55,3 +55,13 @@ def test_11_food_should_be_in_a_valid_cell():
     assert 0 <= food_x < snake_game.width()
     assert 0 <= food_y < snake_game.height()
     assert (food_x, food_y) != snake_game.snake_position()
+
+
+#0 to 11 are initialization tests.
+
+#snake size = score + 1
+def test_12_snake_will_do_nothing_if_want_to_eat_being_in_other_position():
+    snake_game = Game()
+    snake_game.eat((10, 11), (12,13))
+    assert(snake_game.score_points()+1 == 1)
+
