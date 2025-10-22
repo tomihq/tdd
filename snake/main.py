@@ -1,4 +1,9 @@
+import random
 class Game:
+
+    def __init__(self):
+        self.food_position = self.spawn_food() 
+
     def score_points(self):
         return 0
 
@@ -30,4 +35,9 @@ class Game:
         return 20
 
     def food_position(self):
-        return (5, 5)
+        return food_position
+
+    def spawn_food(self):
+        food_x = random.randint(0, self.width - 1)
+        food_y = random.randint(0, self.height - 1)
+        

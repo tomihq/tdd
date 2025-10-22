@@ -54,5 +54,4 @@ def test_11_food_should_be_in_a_valid_cell():
     snake_position_x, snake_position_y = snake_game.snake_position()
     assert 0 <= food_x < snake_game.width()
     assert 0 <= food_y < snake_game.height()
-    assert food_x != snake_position_x
-    assert food_y != snake_position_y
+    assert (food_x, food_y) != snake_game.snake_position()
