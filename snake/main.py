@@ -67,5 +67,10 @@ class Game:
 
     def move_snake(self):
         head_x, head_y = self._snake_position
-        self._snake_position = ((head_x + 1) % self._cell_size, head_y)
+        if self._snake_orientation == (1,0):
+            self._snake_position = ((head_x + 1) % self._cell_size, head_y)
+            return
+
+        self._snake_position = ((head_x -1) % self._cell_size, head_y)
+        
 
