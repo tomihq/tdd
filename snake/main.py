@@ -59,4 +59,7 @@ class Game:
             return
         self._score_points += 1 
         
-        
+    def move_snake(self):
+        head_x, head_y = self._snake_position
+        self._snake_position = (head_x + 1, head_y)
+

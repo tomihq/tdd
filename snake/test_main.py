@@ -69,3 +69,13 @@ def test_13_snake_size_will_grow_if_eats_food():
     snake_game = Game()
     snake_game.eat((11, 11), (11, 11))
     assert(snake_game.score_points()+1 == 2)
+
+# movement
+def test_14_snake_moves_right_one_cell():
+    snake_game = Game()
+    head_x, head_y = snake_game.snake_position()
+    snake_game.move_snake()
+    new_x, new_y = snake_game.snake_position()
+    assert(new_x == head_x + 1)
+    assert(new_y == head_y)
+
