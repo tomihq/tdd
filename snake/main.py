@@ -10,37 +10,39 @@ class Game:
         self._height = 20
         self._snake_orientation = (1, 0)
         self._snake_position = (10, 10)
+        self._screen_width = 400
+        self._screen_height = 400
         self._food_position = self.spawn_food() 
 
     def score_points(self):
         return 0
 
     def current_state(self):
-        return "running"
+        return self._current_state
 
     def game_over(self):
-        return False
+        return self._game_over
 
     def width(self):
-        return 20
+        return self._width
 
     def height(self):
-        return 20
+        return self._height
 
     def screen_width(self):
-        return 400
+        return self._width * self._cell_size
     
     def screen_height(self):
-        return 400
+        return self._height * self._cell_size
 
     def snake_orientation(self):
-        return (1, 0)
+        return self._snake_orientation
     
     def snake_position(self):
-        return (10, 10)
+        return self._snake_position
 
     def cell_size(self):
-        return 20
+        return self._cell_size
 
     def food_position(self):
         return self._food_position
