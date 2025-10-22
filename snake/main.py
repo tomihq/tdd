@@ -62,7 +62,8 @@ class Game:
 
         
     def change_snake_orientation(self, orientation):
-        self._snake_orientation = (-1, 0)
+        orientation_directions = {"left": (-1, 0), "right": (1,0), "up": (0, 1), "down": (0, -1)}
+        self._snake_orientation = orientation_directions[orientation] 
 
     def move_snake(self):
         head_x, head_y = self._snake_position
