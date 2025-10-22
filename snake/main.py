@@ -28,3 +28,6 @@ class Game:
 
     def cell_size(self):
         return 20
+
+    def food_position(self):
+        return (5, 5)

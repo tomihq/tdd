@@ -48,4 +48,11 @@ def test_10_game_starts_with_snake_at_middle_of_screen():
     height = snake_game.height() // 2
     assert(snake_game.snake_position() == (width, height))
 
-
+def test_11_food_should_be_in_a_valid_cell():
+    snake_game = Game()
+    food_x, food_y = snake_game.food_position()
+    snake_position_x, snake_position_y = snake_game.snake_position()
+    assert 0 <= food_x < snake_game.width()
+    assert 0 <= food_y < snake_game.height()
+    assert food_x != snake_position_x
+    assert food_y != snake_position_y
