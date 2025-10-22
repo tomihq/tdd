@@ -15,7 +15,7 @@ class Game:
         self._food_position = self.spawn_food() 
 
     def score_points(self):
-        return 0
+        return self._score_points
 
     def current_state(self):
         return self._current_state
@@ -57,6 +57,6 @@ class Game:
     def eat(self, snake_position, food_position):
         if snake_position != food_position:
             return
-        
+        self._score_points += 1 
         
         
