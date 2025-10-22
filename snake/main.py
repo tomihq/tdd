@@ -70,7 +70,14 @@ class Game:
         if self._snake_orientation == (1,0):
             self._snake_position = ((head_x + 1) % self._cell_size, head_y)
             return
-
-        self._snake_position = ((head_x -1) % self._cell_size, head_y)
+        elif self._snake_orientation == (-1, 0):
+            self._snake_position = ((head_x -1) % self._cell_size, head_y)
+            return
+        elif self._snake_orientation == (0, 1):
+            self._snake_position = ((head_x), head_y + 1 % self._cell_size)
+            return
         
+        self._snake_position = ((head_x), head_y -1 % self._cell_size)
+
+                
 
