@@ -85,4 +85,24 @@ def test_15_snakes_moves_around_right_edge():
     snake_game.move_snake()
     new_x, new_y = snake_game._snake_position
     assert new_x == 0
-    assert new_y == 10 
+    assert new_y == 10
+
+def test_16_orientation_changes_when_moving_left():
+    snake_game = Game()
+    snake_game.change_snake_orientation("left")
+    orientation = snake_game.snake_orientation()
+    assert(orientation == (-1, 0))
+
+#def test_20_snakes_moves_left_one_cell():
+    #snake_game = Game()
+    #    head_x, head_y = snake_game.snake_position()
+    #orientation_x, orientation_y = snake_game.snake_orientation()
+#   assert(orientation_x == -1)
+#   snake_game.move_snake()
+#   new_x, new_y = snake_game.snake_position()
+#  assert(orientation_x == -1)
+##   assert(new_x == head_x - 1)
+#assert(new_y == head_y)
+
+
+    

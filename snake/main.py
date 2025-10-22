@@ -47,6 +47,7 @@ class Game:
     def food_position(self):
         return self._food_position
 
+
     def spawn_food(self):
         food_x = random.randint(0, self._width - 1)
         food_y = random.randint(0, self._height - 1)
@@ -58,7 +59,11 @@ class Game:
         if snake_position != food_position:
             return
         self._score_points += 1 
+
         
+    def change_snake_orientation(self, orientation):
+        self._snake_orientation = (-1, 0)
+
     def move_snake(self):
         head_x, head_y = self._snake_position
         self._snake_position = ((head_x + 1) % self._cell_size, head_y)
