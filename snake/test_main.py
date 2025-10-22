@@ -79,3 +79,10 @@ def test_14_snake_moves_right_one_cell():
     assert(new_x == head_x + 1)
     assert(new_y == head_y)
 
+def test_15_snakes_moves_around_right_edge():
+    snake_game = Game()
+    snake_game._snake_position = (19, 10)
+    snake_game.move_snake()
+    new_x, new_y = snake_game._snake_position
+    assert new_x == 0
+    assert new_y == 10 
